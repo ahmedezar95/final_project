@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Ahmed Ezar</title>
+		<link rel="stylesheet" href="style.css" />
+	</head>
+	<body>
+		<header>
+			<nav>
+				<ul class="nav-list">
+					<li class="nav-link">
+						<a href="#home">Home</a>
+					</li>
+					<li class="nav-link">
+						<a href="#gallery">Gallery</a>
+					</li>
+					<li class="nav-link">
+						<a href="#about">About me</a>
+					</li>
+					<li class="nav-link">
+						<a href="#registeration">Registeration</a>
+					</li>
+				</ul>
+			</nav>
+		</header>
+
+		<main>
+			<section class="home-section" id="home">
+				<h1 class="title">Ahmed Ezar</h1>
+			</section>
+			<section class="gallery-section" id="gallery">
+				<div class="slider">
+					<div class="slider-container">
+						<img src="imgs/snow.jpg" class="slider-img" />
+						<img src="imgs/sand.jpg" class="slider-img" />
+						<img src="imgs/mount.jpg" class="slider-img" />
+						<img src="imgs/lightning.jpg" class="slider-img" />
+					</div>
+					<div class="slider-bullets">
+						<div class="bullet"></div>
+						<div class="bullet"></div>
+						<div class="bullet"></div>
+						<div class="bullet"></div>
+					</div>
+				</div>
+			</section>
+			<section class="about-section" id="about">
+				<img src="imgs/ahmed.jpeg" alt="ahmed" />
+				<p>
+					I'm ahmed Lorem ipsum dolor sit amet consectetur adipisicing elit.
+					Beatae totam, optio dicta ipsam nam consequuntur! Fugiat dolore
+					temporibus dolorem molestiae consequatur error laudantium doloribus
+					iusto odit. Autem, reiciendis. Quo, eos?
+				</p>
+			</section>
+			<section class="registeration-section" id="registeration">
+				<form action="thanks.html">
+					<label for="f-name">
+						First Name :
+						<input
+							type="text"
+							name="f-name"
+							id="f-name"
+							minlength="3"
+							maxlength="15"
+							pattern="[a-zA-Z]+"
+							placeholder="Characters only"
+							required
+						/>
+					</label>
+					<label for="l-name">
+						Last Name :
+						<input
+							type="text"
+							name="l-name"
+							id="l-name"
+							minlength="3"
+							maxlength="15"
+							pattern="[a-zA-Z]+"
+							placeholder="Characters only"
+							required
+						/>
+					</label>
+					<label for="username">
+						UserName :
+						<input
+							type="text"
+							name="username"
+							id="username"
+							minlength="6"
+							maxlength="20"
+							placeholder="username"
+							required
+						/>
+					</label>
+					<label for="password">
+						Password :
+						<input
+							type="password"
+							name="password"
+							id="password"
+							part="\w"
+							placeholder="password"
+							min="8"
+							required
+						/>
+					</label>
+					<label for="age">
+						Age:
+						<input
+							type="number"
+							name="age"
+							id="age"
+							min="16"
+							max="45"
+							placeholder="age"
+							required
+						/>
+					</label>
+					<label for="email">
+						Email:
+						<input
+							type="email"
+							name="email"
+							id="email"
+							pattern="\w+@\w+\.\w+"
+							placeholder="email"
+							required
+						/>
+					</label>
+					<label for="country">
+						Country :
+						<select name="country" id="country">
+							<option value="egypt">egypt</option>
+							<option value="america">america</option>
+							<option value="france">france</option>
+							<option value="emirates">emirates</option>
+						</select>
+					</label>
+					<div id="gender">
+						<label for="gender">Gender :</label>
+						<label for="male">
+							<input type="radio" name="gender" id="male" />
+							Male
+						</label>
+						<label for="female">
+							<input type="radio" name="gender" id="female" />
+							Female
+						</label>
+					</div>
+
+					<div name="interests" id="interests">
+						<label for="interests">
+							Interests :
+							<label for="programming">
+								<input type="checkbox" name="programming" id="programming" />
+								programming
+							</label>
+							<label for="design">
+								<input type="checkbox" name="design" id="design" />
+								design
+							</label>
+						</label>
+					</div>
+
+					<label for="address">
+						Address :
+						<input
+							type="text"
+							name="address"
+							id="address"
+							placeholder="Address"
+							required
+						/>
+					</label>
+					<button type="submit">Submit</button>
+				</form>
+			</section>
+		</main>
+
+		<script src="script.js"></script>
+	</body>
+</html>
