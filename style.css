@@ -86,12 +86,13 @@ nav {
 .about-section {
 	display: flex;
 	justify-content: space-between;
-	width: 75%;
+	align-items: center;
+	width: 65%;
 	margin: 0 auto;
 }
 
 .about-section img {
-	width: 30%;
+	height: 500px;
 	border-radius: 20px;
 }
 
